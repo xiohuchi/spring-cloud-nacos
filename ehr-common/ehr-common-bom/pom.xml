@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-cloud-dependencies-parent</artifactId>
+        <groupId>org.springframework.cloud</groupId>
+        <version>2.1.5.RELEASE</version>
+        <relativePath/>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ehr-common-bom</artifactId>
+    <version>${ehr.version}</version>
+    <description>pigx 公共版本控制</description>
+
+    <properties>
+        <ehr.version>1.0.0</ehr.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.nacos</groupId>
+                <artifactId>ehr-common-core</artifactId>
+                <version>${ehr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nacos</groupId>
+                <artifactId>ehr-common-gateway</artifactId>
+                <version>${ehr.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

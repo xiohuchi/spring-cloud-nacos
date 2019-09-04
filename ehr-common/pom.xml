@@ -14,8 +14,9 @@
     <description>ehr 公共聚合模块</description>
 
     <modules>
-        <module>ehr-common-gateway</module>
         <module>ehr-common-core</module>
+        <module>ehr-common-gateway</module>
+        <module>ehr-common-bom</module>
     </modules>
 
 </project>

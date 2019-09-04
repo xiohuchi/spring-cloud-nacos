@@ -44,6 +44,7 @@
         <dependency>
             <groupId>com.nacos</groupId>
             <artifactId>ehr-common-core</artifactId>
+            <version>1.0.0</version>
         </dependency>
         <!--缓存-->
         <dependency>
