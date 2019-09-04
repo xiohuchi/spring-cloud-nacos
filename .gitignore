@@ -9,3 +9,7 @@ out
 gen
 !/logs/
 !/work/
+/derby.log
+/logs/
+
+target
