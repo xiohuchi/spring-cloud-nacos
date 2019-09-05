@@ -16,6 +16,7 @@
 
     <properties>
         <ehr.version>1.0.0</ehr.version>
+        <swagger.core.version>1.5.22</swagger.core.version>
     </properties>
 
     <dependencyManagement>
@@ -29,6 +30,17 @@
                 <groupId>com.nacos</groupId>
                 <artifactId>ehr-common-gateway</artifactId>
                 <version>${ehr.version}</version>
+            </dependency>
+            <!--swagger 最新依赖内置版本-->
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-models</artifactId>
+                <version>${swagger.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.core.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
