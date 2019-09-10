@@ -19,14 +19,36 @@
             <groupId>com.nacos</groupId>
             <artifactId>ehr-user-api</artifactId>
         </dependency>
+        <!--日志处理-->
         <dependency>
             <groupId>com.nacos</groupId>
-            <artifactId>ehr-common-swagger</artifactId>
+            <artifactId>ehr-common-log</artifactId>
         </dependency>
         <dependency>
             <groupId>com.nacos</groupId>
             <artifactId>ehr-common-data</artifactId>
         </dependency>
+        <!--swagger-->
+        <dependency>
+            <groupId>com.nacos</groupId>
+            <artifactId>ehr-common-swagger</artifactId>
+        </dependency>
+        <!--注册中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--spring security 、oauth、jwt依赖-->
+        <dependency>
+            <groupId>com.nacos</groupId>
+            <artifactId>ehr-common-security</artifactId>
+        </dependency>
+        <!--支持动态路由配置 -->
         <dependency>
             <groupId>com.nacos</groupId>
             <artifactId>ehr-common-gateway</artifactId>
@@ -45,6 +67,16 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--web 模块-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
     </dependencies>
 

@@ -6,10 +6,13 @@ import com.nacos.ehr.user.api.entity.SysUser;
 import com.nacos.ehr.user.service.SysUserService;
 import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @author yangbin
@@ -18,11 +21,20 @@ import org.springframework.web.bind.annotation.RestController;
  * ehr
  */
 @RestController
-@AllArgsConstructor
 @RequestMapping("/user")
 @Api(value = "user", tags = "用户管理模块")
 public class SysUserController {
-    private final SysUserService userService;
+
+    @Resource
+    private SysUserService userService;
+
+    @Value("${jwt.tokenHead}")
+    private String tokenHead;
+
+    @GetMapping("/tokenHead/test")
+    public R test() {
+        return R.ok("tokenHead");
+    }
 
     /**
      * 通过ID查询用户信息
