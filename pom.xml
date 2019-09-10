@@ -22,9 +22,40 @@
         <swagger.fox.version>2.9.2</swagger.fox.version>
         <swagger-bootstrap-ui.version>1.9.5</swagger-bootstrap-ui.version>
         <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
+        <jasypt.version>2.1.1</jasypt.version>
+        <spring-boot-admin.version>2.1.6</spring-boot-admin.version>
+        <ttl.version>2.10.2</ttl.version>
     </properties>
 
     <dependencies>
+        <!--配置文件处理器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--jasypt配置文件加解密-->
+        <dependency>
+            <groupId>com.github.ulisesbocchio</groupId>
+            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <version>${jasypt.version}</version>
+        </dependency>
+        <!--监控-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--监控客户端-->
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring-boot-admin.version}</version>
+        </dependency>
+        <!--断路器依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
         <!--Lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -43,7 +74,7 @@
         <module>ehr-gateway</module>
         <module>ehr-common</module>
         <module>ehr-auth</module>
-        <module>ehr-service</module>
+        <module>ehr-user</module>
     </modules>
 
     <dependencyManagement>

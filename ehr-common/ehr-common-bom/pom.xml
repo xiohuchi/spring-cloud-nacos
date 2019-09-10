@@ -12,11 +12,15 @@
 
     <artifactId>ehr-common-bom</artifactId>
     <version>${ehr.version}</version>
-    <description>pigx 公共版本控制</description>
+    <description>ehr 公共版本控制</description>
 
     <properties>
         <ehr.version>1.0.0</ehr.version>
         <swagger.core.version>1.5.22</swagger.core.version>
+        <mybatis-plus-extension.version>3.1.2</mybatis-plus-extension.version>
+        <mybatis-plus-boot-starter.version>3.1.0</mybatis-plus-boot-starter.version>
+        <druid.version>1.1.18</druid.version>
+        <mysql.connector.version>8.0.16</mysql.connector.version>
     </properties>
 
     <dependencyManagement>
@@ -30,6 +34,55 @@
                 <groupId>com.nacos</groupId>
                 <artifactId>ehr-common-gateway</artifactId>
                 <version>${ehr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nacos</groupId>
+                <artifactId>ehr-common-data</artifactId>
+                <version>${ehr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nacos</groupId>
+                <artifactId>ehr-common-swagger</artifactId>
+                <version>${ehr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nacos</groupId>
+                <artifactId>ehr-user-api</artifactId>
+                <version>${ehr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nacos</groupId>
+                <artifactId>ehr-common-log</artifactId>
+                <version>${ehr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nacos</groupId>
+                <artifactId>ehr-common-security</artifactId>
+                <version>${ehr.version}</version>
+            </dependency>
+            <!--mybatis plus extension,包含了mybatis plus core-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus-extension.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus-boot-starter.version}</version>
+            </dependency>
+            <!-- druid 连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--mysql 驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
             </dependency>
             <!--swagger 最新依赖内置版本-->
             <dependency>

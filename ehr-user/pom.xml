@@ -9,19 +9,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ehr-common</artifactId>
+    <artifactId>ehr-user</artifactId>
     <packaging>pom</packaging>
-    <description>ehr 公共聚合模块</description>
 
     <modules>
-        <module>ehr-common-core</module>
-        <module>ehr-common-gateway</module>
-        <module>ehr-common-bom</module>
-        <module>ehr-common-swagger</module>
-        <module>ehr-common-data</module>
-        <module>ehr-common-datasource</module>
-        <module>ehr-common-log</module>
-        <module>ehr-common-security</module>
+        <module>ehr-user-api</module>
+        <module>ehr-user-biz</module>
     </modules>
 
 </project>

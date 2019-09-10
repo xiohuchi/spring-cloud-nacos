@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ehr-user</artifactId>
+        <groupId>com.nacos</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ehr-user-biz</artifactId>
+    <packaging>jar</packaging>
+    <description>ehr 通用用户权限管理系统业务处理模块</description>
+
+    <dependencies>
+        <!--upms api、model 模块-->
+        <dependency>
+            <groupId>com.nacos</groupId>
+            <artifactId>ehr-user-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.nacos</groupId>
+            <artifactId>ehr-common-swagger</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.nacos</groupId>
+            <artifactId>ehr-common-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.nacos</groupId>
+            <artifactId>ehr-common-gateway</artifactId>
+        </dependency>
+        <!--mybatis-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!-- druid 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+        <!--数据库-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

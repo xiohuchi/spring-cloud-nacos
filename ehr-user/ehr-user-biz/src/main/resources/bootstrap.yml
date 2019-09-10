@@ -1,5 +1,5 @@
 server:
-  port: 9999
+  port: 4000
 
 spring:
   application:
@@ -12,5 +12,7 @@ spring:
         server-addr: ${spring.cloud.nacos.discovery.server-addr}
         file-extension: yml
         shared-dataids: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+  autoconfigure:
+    exclude: org.springframework.cloud.gateway.config.GatewayAutoConfiguration,org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration
   profiles:
     active: @profiles.active@
