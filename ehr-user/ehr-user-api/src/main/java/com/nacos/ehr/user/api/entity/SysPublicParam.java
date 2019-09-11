@@ -9,7 +9,7 @@
  * Redistributions in binary form must reproduce the above copyright
  * notice, this list of conditions and the following disclaimer in the
  * documentation and/or other materials provided with the distribution.
- * Neither the name of the pig4cloud.com developer nor the names of its
+ * Neither the name of the ehr4cloud.com developer nor the names of its
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
@@ -53,7 +53,7 @@ public class SysPublicParam extends Model<SysPublicParam> {
 	/**
 	 * 公共参数地址值,英文大写+下划线
 	 */
-	@ApiModelProperty(value = "键[英文大写+下划线]", required = true, example = "PIGX_PUBLIC_KEY")
+	@ApiModelProperty(value = "键[英文大写+下划线]", required = true, example = "EHR_PUBLIC_KEY")
 	private String publicKey;
 	/**
 	 * 值
@@ -74,7 +74,7 @@ public class SysPublicParam extends Model<SysPublicParam> {
 	/**
 	 * 公共参数编码
 	 */
-	@ApiModelProperty(value = "编码", example = "^(PIG|PIGX)$")
+	@ApiModelProperty(value = "编码", example = "^(EHR|EHR)$")
 	private String validateCode;
 	/**
 	 * 创建时间

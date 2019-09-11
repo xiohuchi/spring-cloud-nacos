@@ -9,6 +9,6 @@ import org.springframework.cloud.client.SpringCloudApplication;
  * 认证授权中心
  */
 @SpringCloudApplication
-//@EnablePigxFeignClients
+//@EnableEheFeignClients
 public class EhrAuthApplication {
 }
