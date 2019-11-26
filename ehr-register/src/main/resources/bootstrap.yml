@@ -13,7 +13,7 @@ db:
   user: root
   password: root123@
   url:
-    0: jdbc:mysql://106.75.222.98:3306/nacos_dev?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+    0: jdbc:mysql://nacos_dev:3306/nacos_dev?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
 
 spring:
   datasource:
