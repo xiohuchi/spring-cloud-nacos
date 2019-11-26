@@ -75,6 +75,7 @@
         <module>ehr-common</module>
         <module>ehr-auth</module>
         <module>ehr-user</module>
+        <module>ehr-gendao</module>
     </modules>
 
     <dependencyManagement>
