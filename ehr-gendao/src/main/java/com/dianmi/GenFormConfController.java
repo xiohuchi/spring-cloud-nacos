@@ -27,7 +27,7 @@ public class GenFormConfController {
     @GetMapping("/gendao")
     public void gendao(HttpServletResponse response) throws IOException {
         GenConfig genConfig = new GenConfig();
-        genConfig.setPackageName("com.dianmi.ehr");
+        genConfig.setPackageName("com.dianmi.sso");
         genConfig.setAuthor("yangbin");
         byte[] data = generatorService.generatorCode(genConfig);
         response.reset();

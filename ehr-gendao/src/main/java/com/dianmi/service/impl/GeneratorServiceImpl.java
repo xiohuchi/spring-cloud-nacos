@@ -53,15 +53,24 @@ public class GeneratorServiceImpl implements GeneratorService {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         ZipOutputStream zip = new ZipOutputStream(outputStream);
 
-        List<String> tableNameList = Arrays.asList("WORKER_NODE", "base_enum", "t_access_token_record", "t_app_state", "t_company_info", "t_course",
-                "t_course_cw", "t_course_group", "t_course_group_relation", "t_course_lecturer", "t_courseware",
-                "t_courseware_download_record", "t_courseware_group", "t_courseware_view", "t_department", "t_file_image",
-                "t_lecturer", "t_lecturer_train_record", "t_member_courseware_score", "t_scene_info", "t_student_group",
-                "t_student_group_intelligent_manage", "t_student_group_member", "t_train_category", "t_train_course",
-                "t_train_form", "t_train_invite_join_member", "t_train_member_record", "t_train_notice_lecturer_record",
-                "t_train_notice_member_record", "t_train_notice_setting", "t_train_online_course_setting", "t_train_plan",
-                "t_train_plan_img", "t_train_plan_member", "t_train_sign_record", "t_train_signed_setting", "t_train_signup_setting",
-                "t_train_student_group", "t_use_statistics", "t_usr_info");
+        List<String> tableNameList = Arrays.asList("sys_app_info",
+                "sys_authority",
+                "sys_dict",
+                "sys_dict_item",
+                "sys_erhao_secret",
+                "sys_group",
+                "sys_group_permission",
+                "sys_log",
+                "sys_operation",
+                "sys_permission",
+                "sys_role",
+                "sys_role_authority",
+                "sys_service",
+                "sys_user",
+                "sys_user_app_info",
+                "sys_user_group",
+                "sys_user_permission",
+                "sys_user_role");
         for (String tableName : tableNameList) {
             //查询列信息
             List<Map<String, String>> columns = queryColumns(tableName);
