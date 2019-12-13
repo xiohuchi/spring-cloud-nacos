@@ -76,6 +76,7 @@
         <module>ehr-auth</module>
         <module>ehr-user</module>
         <module>ehr-gendao</module>
+        <module>ehr-xxl</module>
     </modules>
 
     <dependencyManagement>
@@ -141,16 +142,11 @@
     <repositories>
         <!--阿里云私服-->
         <repository>
-            <id>aliyun</id>
-            <name>aliyun</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <id>local-nexus</id>
+            <name>Central Repository</name>
+            <url>http://yb-notebook:8081/repository/maven-public/</url>
         </repository>
-        <!--gitee 私服-->
-        <repository>
-            <id>gitee.wang</id>
-            <name>gitee.wang</name>
-            <url>http://nexus.gitee.wang/repository/maven-releases/</url>
-        </repository>
+
     </repositories>
 
     <build>
